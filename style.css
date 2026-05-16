@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "Inter";
+  src: url(./assets//fonts/Inter-VariableFont_slnt,wght.ttf);
+}
+
+:root {
+  font-size: 16px;
+  --Green: hsl(75, 94%, 57%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-700: hsl(0, 0%, 20%);
+  --Grey-800: hsl(0, 0%, 12%);
+  --Grey-900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+
+body {
+  background-color: black;
+  color: var(--White);
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.profile-card {
+  background-color: var(--Grey-900);
+  width: 350px;
+  max-width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 0.8rem;
+  color: var(--White);
+  margin-bottom: 10px;
+}
+
+.colored-text {
+  color: var(--Green);
+  margin-bottom: 25px;
+  font-size: 0.85rem;
+}
+
+.social-links {
+  display:block;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  text-decoration: none;
+  color: var(--White);
+  background-color: var(--Grey-700);
+  padding: 12px 20px;
+  border-radius: 10px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.social-links:hover {
+  background-color: var(--Green);
+}
+
+.social-links:focus-visible {
+  outline: 2px solid var(--Green);
+  outline-offset: 2px;
+}
+
+.attribution {
+  font-size: 0.6875rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.attribution a:hover {
+  color: darkslateblue;
+}
