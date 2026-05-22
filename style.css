@@ -38,8 +38,7 @@ body {
 
 .profile-card {
   background-color: var(--Grey-900);
-  width: 350px;
-  max-width: 100%;
+  width: clamp(280px, 90%, 350px);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
